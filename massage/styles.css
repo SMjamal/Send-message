@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background: #6B95D4;
+}
+
+.contact_form {
+    width: 90%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
+}
+
+
+
+.faq_section {
+    width: 90%;
+    padding-bottom: 2rem;
+}
+
+.faq_title {
+    font-size: 2.8vw;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+.faq {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+.question {
+    border-bottom: 2px solid #fff;
+    padding-top: 2em;
+}
+
+.question h3 {
+    font-size: 1.8vw;
+}
+
+.contact_input {
+    width: 93%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact_input input,.contact_input select {
+    border: none;
+    padding: 0.8em;
+    width: 49%;
+    border-radius: 5px;
+    margin: 0.5em 0 1em 0;
+    font-size: 1.5rem;
+    background: #fcf9f9;
+
+}
+
+.contact_container form textarea {
+    border: none;
+    padding: 0.8em;
+    width: 93%;
+    border-radius: 5px;
+    margin: 0.5em 0 1em 0;
+    font-size: 1.5rem;
+    resize: none;
+    height: 8em;
+    background: #fcf9f9;
+    font-family: sans-serif;
+}
+
+.contact_container input:focus,
+.contact_container textarea:focus {
+    outline: none;
+}
+
+.contact_container button {
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    padding: 0.8em;
+    background-color: #ff742e;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    font-family: sans-serif;
+}
+
+.contact_container button:hover {
+    background-color: #e16628;
+}
+
+@media screen and (max-width:1280px) {
+    .contact_input {
+        width: 93%;
+        display: block;
+    }
+
+    .contact_input input {
+        width: 100%;
+        ;
+    }
+    .contact_input select {
+        width: 100%;
+        ;
+    }
+
+    .contact_container button {
+        width: 93%;
+    }
+}

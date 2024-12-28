@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="contact_container">
+
+        <form id="contact_form" class="contact_form">
+
+            <!-- faq ::start -->
+            <div class="faq_section">
+                <h1 class="faq_title">Get A Free Quote</h1>
+
+                <div class="faq">
+
+                    <div class="question">
+                        <h3>What Services Do You Offer Me?</h3>
+                    </div>
+
+                    <div class="question">
+                        <h3>Do You Wants To Build A New Websites?</h3>
+                    </div>
+
+                    <div class="question">
+                        <h3>Do You Wants To Make Your Services Unique?</h3>
+                    </div>
+
+                    <div class="question">
+                        <h3>Do You Have Any Existing Style Guides Or Guidelines?</h3>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- faq::end -->
+
+            <div class="contact_input">
+                <!-- Name -->
+                <input type="text" id="user_name" name="user_name" placeholder="Your Name" required>
+
+                <!-- Email -->
+                <input type="email" id="user_email" name="user_email" placeholder="Your Email" required>
+            </div>
+
+            <div class="contact_input">
+                <!-- Email -->
+                <input type="number" id="user_phone" name="user_phone" placeholder="Your phone" required>
+
+                <!-- Subject -->
+                <select id="user_subject" name="user_subject">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                </select>
+            </div>
+
+            <!-- Message -->
+            <textarea class="contact_message" name="message" id="message" placeholder="Your Message"
+                required></textarea>
+
+            <!-- Submit button -->
+            <button type="submit" id="submit_btn" class="submit-btn">Submit</button>
+
+
+        </form>
+
+    </section>
+    <!-- EmailJS cdn -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
